@@ -9,7 +9,7 @@ pipeline {
         stage('Run Container') {
             steps {
                 sh 'docker rm -f react-landing || true'
-                sh 'docker run -d -p 8080:80 --name react-landing react-landing-page'
+                sh 'docker run -d -p 8070:80 --name react-landing react-landing-page'
             }
         }
     }
